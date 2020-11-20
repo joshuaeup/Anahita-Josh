@@ -18,8 +18,8 @@ var string1 = "So dark the con of man";
 
 var string2 = "Madonna of the Rocks";
 
-var parseString1 = convert(string1);
-var parseString2 = convert(string2);
+var parsedString1 = convert(string1);
+var parsedString2 = convert(string2);
 
 function check(arr1, arr2) {
     for (var index = 0; index < arr1.length; index++) {
@@ -31,4 +31,4 @@ function check(arr1, arr2) {
     return true;
 }
 
-console.log(check(parseString1, parseString2));
+console.log(check(parsedString1, parsedString2));
