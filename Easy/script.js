@@ -1,21 +1,19 @@
 "use strict";
 
-// Write a JavaScript function that takes in a random array and outputs two new arrays of odd numbers and even numbers.
-
-var num = [2, 4, 7, 11, 15, 16];
+// Variable Declarations
+var nums = [2, 4, 7, 11, 15, 16];
 var even = [];
 var odd = [];
 
-function operation(num) {
-    for (var i = 0; i < num.length; i++) {
-        if (num[i] % 2) {
-            odd.push(num[i]);
-        } else {
-            even.push(num[i]);
-        }
-    }
-}
+// Function to check if value is even or odd
+const operation = (nums) => {
+    // Loop through entire array then run ternary operator to determine which array to push to
+    nums.map(function (current) {
+        current % 2 ? odd.push(current) : even.push(current);
+    });
+};
 
-operation(num);
+// Method Call
+operation(nums);
 console.log("Even " + even);
 console.log("Odd " + odd);
