@@ -23,6 +23,9 @@ function convert(str) {
     return str.split(""); // Split into array
 }
 
+// Parsed String
+const parsedStr = convert(str);
+
 // Function to check if bracket combination matches
 function brackets(str) {
     // Loop through entire combinations array
@@ -39,4 +42,4 @@ function brackets(str) {
 }
 
 // Print boolean with parsed str
-console.log(brackets(convert(str)));
+console.log(brackets(parsedStr));
